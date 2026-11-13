@@ -91,6 +91,12 @@ body{font-family:var(--font);background:var(--surface);color:var(--primary);-web
 .left p{margin:0 auto}
 .computer-frame{max-width:320px;margin:0 auto}
 }
+/* orb drift */
+.orb.tl{animation:driftA 14s ease-in-out infinite alternate}
+.orb.br{animation:driftB 17s ease-in-out infinite alternate}
+@keyframes driftA{0%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,28px) scale(1.04)}100%{transform:translate(-18px,56px) scale(.98)}}
+@keyframes driftB{0%{transform:translate(0,0) scale(1)}50%{transform:translate(-46px,-32px) scale(1.05)}100%{transform:translate(22px,-60px) scale(.97)}}
+@media (prefers-reduced-motion:reduce){.orb{animation:none!important}}
 </style>
 </head>
 <body>
